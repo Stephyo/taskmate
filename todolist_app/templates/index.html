@@ -1,0 +1,44 @@
+{% extends 'base.html' %} {% load static %} {% block title %}
+<title>Taskmate</title>
+{% endblock title %} {% block content %}
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-lg-4">
+      <img
+        src="{% static 'images/light_idea.jpg' %}"
+        alt="Have an idea"
+        width="360"
+        height="250"
+      />
+    </div>
+    <div class="col-lg-4">
+      <img
+        src="{% static 'images/idea_matter.jpg' %}"
+        alt="Ideas Matters"
+        width="360"
+        height="250"
+      />
+    </div>
+    <div class="col-lg-4">
+      <img
+        src="{% static 'images/reality.jpg' %}"
+        alt="Turn it to reality"
+        width="360"
+        height="250"
+      />
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="text-center">
+      <h2>Take a Pause & Idea Search!</h2>
+      <h3>Create & Pen down Possiblities</h3>
+      <h2>Work on them & Make them Work!</h2>
+      </br>
+      <a href="{% url 'todolist' %}">
+      <button type="button" class="btn btn-primary btn-lg mt-3 shadow">Let's Get Started </button></a>
+    </div>
+   
+  </div>
+</div>
+
+{% endblock content %}
