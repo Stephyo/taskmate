@@ -82,13 +82,13 @@ def index(request):
 
 def contact(request):
     context = {
-        'contact_text': "Welcome to Contact",
+        'contact_text': "Contact us",
     }
     return render(request, 'contact.html', context)
 
 
 def about(request):
     context = {
-        'about_text': "About us",
+        'about_text': "Something about us...",
     }
     return render(request, 'about.html', context)
